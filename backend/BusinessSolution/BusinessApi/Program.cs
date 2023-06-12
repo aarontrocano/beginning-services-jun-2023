@@ -16,7 +16,8 @@ if (app.Environment.IsDevelopment())
 
 app.MapGet("/clock", () =>
 {
-    return "Hi There";
+    return "Hi There! " + DateTime.Now;
+    //return "Hi There";
 });
 
 var summaries = new[]
