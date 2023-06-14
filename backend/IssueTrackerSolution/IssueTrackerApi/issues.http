@@ -4,10 +4,11 @@ GET http://localhost:1338/open-issues
 
 
 ### Adding an Issue
+
 POST http://localhost:1338/open-issues
 Content-Type: application/json
 
 {
-  "from": "aaron trocano",
-  "issue": "Docker won't Start"
+    "from": "Stacey Gonzalez",
+  "issue": "Her Husband didn't do the dishes. Again"
 }

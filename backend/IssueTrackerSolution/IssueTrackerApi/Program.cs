@@ -10,9 +10,13 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var dataConnectionString = builder.Configuration.GetConnectionString("data") ?? throw new ArgumentException("Need a data connection string");
-builder.Services.AddMarten(OptionsBuilderConfigurationExtensions =>
+builder.Services.AddMarten(options =>
 {
-
+    options.Connection(dataConnectionString);
+    if (builder.Environment.IsDevelopment())
+    {
+        options.AutoCreateSchemaObjects = Weasel.Core.AutoCreate.All;
+    }
 });
 
 var app = builder.Build();
@@ -27,5 +31,6 @@ if (app.Environment.IsDevelopment())
 app.UseAuthorization();
 
 app.MapControllers();
+
 
 app.Run();
