@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessApi", "BusinessApi\BusinessApi.csproj", "{9143B7C5-4E3A-4B99-BE8A-6533F1E72F64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessApi", "BusinessApi\BusinessApi.csproj", "{9143B7C5-4E3A-4B99-BE8A-6533F1E72F64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessApi.UnitTests", "BusinessApi.UnitTests\BusinessApi.UnitTests.csproj", "{9B758542-6DE9-4615-BAA0-9C7E80C85654}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessApi.UnitTests", "BusinessApi.UnitTests\BusinessApi.UnitTests.csproj", "{9B758542-6DE9-4615-BAA0-9C7E80C85654}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessApi.IntegrationTests", "BusinessApi.IntegrationTests\BusinessApi.IntegrationTests.csproj", "{654D376B-C33C-4A8F-888B-B379A8A34AF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessApi.IntegrationTests", "BusinessApi.IntegrationTests\BusinessApi.IntegrationTests.csproj", "{654D376B-C33C-4A8F-888B-B379A8A34AF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
